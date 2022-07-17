@@ -4,8 +4,8 @@
   "description": "MongoDB Notes",
   "scripts": {
     "clean": "rimraf dist",
-    "start": "npm run clean && netlify dev",
-    "build": "npm run clean && netlify build",
+    "start": "pnpm run clean && netlify dev",
+    "build": "pnpm run clean && netlify build",
     "parcel:serve": "parcel src/index.html",
     "parcel:build": "parcel build src/index.html"
   },
@@ -18,17 +18,18 @@
   "license": "MIT",
   "homepage": "https://github.com/uiuxarghya/mongo-notes#readme",
   "dependencies": {
-    "alpinejs": "^2.7.2",
-    "autosize": "^4.0.2",
-    "gotrue-js": "^0.9.27",
-    "mongodb": "^3.6.2",
-    "tailwindcss": "^1.8.10"
+    "alpinejs": "^2.8.2",
+    "autosize": "^5.0.1",
+    "gotrue-js": "^0.9.29",
+    "mongodb": "^4.8.0",
+    "tailwindcss": "^3.1.6"
   },
   "devDependencies": {
-    "@babel/core": "^7.11.6",
-    "@babel/preset-env": "^7.11.5",
-    "netlify-cli": "^2.64.1",
-    "parcel-bundler": "^1.12.4",
+    "@parcel/packager-raw-url": "^2.6.2",
+    "@parcel/transformer-webmanifest": "^2.6.2",
+    "netlify-cli": "^10.10.0",
+    "parcel": "^2.6.2",
+    "postcss": "^8.4.14",
     "rimraf": "^3.0.2"
   }
 }
