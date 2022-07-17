@@ -1,8 +1,8 @@
 [build]
-  command = "pnpm run parcel:build"
+  command = "yarn run parcel:build"
   publish = "dist"
   functions = "functions"
 
 [dev]
-  command = "pnpm run parcel:serve"
+  command = "yarn run parcel:serve"
   autoLaunch = false
